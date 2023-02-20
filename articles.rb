@@ -2,6 +2,7 @@
 # It provides methods for initializing instances of these classes,
 # and for establishing object relationships between them.
 
+# require 'pry'
 class Author
     attr_reader :name
     
@@ -112,43 +113,37 @@ class Author
       @magazine
     end
   end
- 
+#  binding.pry
 
-author1 = Author.new("John Doe")
-puts "author1: #{author1}"
-author2 = Author.new("Jane Smith")
-puts "author2: #{author2}"
+  author1 = Author.new("Shuaib Doe")
+author2 = Author.new("Shaban Smith")
 
 magazine1 = Magazine.new("Vogue", "Fashion")
-puts magazine1
 magazine2 = Magazine.new("National Geographic", "Science")
-puts magazine2
+puts "all #{Magazine.all}"
 
 article1 = Article.new(author1, magazine1, "10 Trends for Spring")
-puts article1
 article2 = Article.new(author1, magazine2, "Wildlife Conservation")
-puts article2
 article3 = Article.new(author2, magazine2, "Volcanic Eruptions")
-puts article3
 
 author1.add_article(magazine2, "Ocean Exploration")
-puts author1
 author2.add_article(magazine2, "Rainforest Preservation")
-puts author2
 
-p author1.articles
+
+
+pp author1.articles
 # should return [article1, article2]
 
-# p author1.magazines
-# # should return [magazine1, magazine2]
+pp author1.magazines
+# should return [magazine1, magazine2]
 
-# p author2.magazines
-# # should return [magazine2]
+pp author2.magazines
+# should return [magazine2]
 
-# p magazine2.article_titles
-# # should return ["Wildlife Conservation", "Ocean Exploration", "Rainforest Preservation"]
+p magazine2.article_titles
+# should return ["Wildlife Conservation", "Ocean Exploration", "Rainforest Preservation"]
 
-# p magazine2.contributing_authors
-# # should return [author1, author2]
+p magazine2.contributing_authors
+# should return [author1, author2]
 
   
