@@ -11,26 +11,33 @@ bash
 
 Copy code
 
-git clone `git@github.com:ShuaibShaban/ruby-project-phase-3.git`
+    git clone git@github.com:ShuaibShaban/ruby-project-phase-3.git
 
-Open the project directory in a text editor, `Visual Studio Code` .
+Open the project directory in a text editor, `Visual Studio Code` . 
+    
+    code .
 
-Open a terminal window in the project directory. shortcut `ctrl + shift + ~`
+Open a terminal window in the project directory. shortcut 
+    
+    ctrl + shift + ~
 
 Install any required gems by running the command:
 
-Copy code
-`bundle install`
+Copy code  and run in your terminal 
+
+    bundle install
+
 Run the project by running the command:
 
 Copy code
 
-`ruby articles.rb`
 
-This will run the project's main file, `articles.rb`, and demonstrate the usage of the classes and their methods.
+    ruby run.rb
+
+This will run the project's main files, ` Articles.rb` ,  ` Author.rb` ,` Magazine.rb` , and demonstrate the usage of the classes and their methods.
 
 ## Usage
-To use the project, you can modify the code in the `articles.rb `file to create new instances of the classes and call their respective methods. You can also create new helper methods if needed to aid in data retrieval and manipulation.
+To use the project, you can modify the code in the  `run.rb `file to create new instances of the classes and call their respective methods. You can also create new helper methods if needed to aid in data retrieval and manipulation.
 
 The code is commented to explain what each part of the code does, and the various methods of the classes are documented to explain their purpose and usage.
 
@@ -39,3 +46,11 @@ Contributions to this project are welcome. If you find a bug, have a suggestion,
 
 ### License
 This project is licensed under the `ISC` License. Feel free to use, modify, and distribute the code. See the LICENSE file for more information.
+
+### Technologies used
+
+    Ruby
+
+### Author 
+
+    Shuaib Shaban
