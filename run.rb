@@ -18,17 +18,25 @@ author2.add_article(magazine2, "Rainforest Preservation")
 
 
 
-pp author1.articles
-# should return [article1, article2]
+# pp author1.articles
+# # should return [article1, article2]
 
-pp author1.magazines
-# should return [magazine1, magazine2]
+# pp author1.magazines
+# # should return [magazine1, magazine2]
 
-pp author2.magazines
-# should return [magazine2]
+# pp author2.magazines
+# # should return [magazine2]
 
-p magazine2.article_titles
-# should return ["Wildlife Conservation", "Ocean Exploration", "Rainforest Preservation"]
+p magazine1.article_titles
 
+# p magazine2.article_titles
+# # should return ["Wildlife Conservation", "Ocean Exploration", "Rainforest Preservation"]
+
+# p magazine1.contributing_authors
 p magazine2.contributing_authors
-# should return [author1, author2]
+# # should return [author1, author2]
+author1.add_article(magazine1, "The Moringa School")
+
+p Article.all
+
+p Magazine.all
